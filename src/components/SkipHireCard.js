@@ -82,12 +82,26 @@ const SkipHireCard = ({ hireData }) => {
       </Box>
 
       <CardContent sx={{ pb: 2 }}>
-        <Typography
-          variant="caption"
-          sx={{ color: "text.secondary", textTransform: "uppercase" }}
-        >
-          Postcode: {hireData.postcode}
-        </Typography>
+       <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+          <Typography variant="caption">Post Code:</Typography>
+         <Typography
+            variant="caption"
+            sx={{
+              color: 'white',   
+              backgroundColor: '#e67701',
+              padding: '1px 5px',  
+              borderRadius: 5,        // green text
+              fontWeight: 'bold',         // bold text
+              textTransform: 'uppercase',
+              display: 'inline-block',
+            }}
+          >
+            {hireData.postcode}
+          </Typography>
+
+        </Box>
+
+
 
         <Typography variant="subtitle1" fontWeight={600} sx={{ mt: 0.5 }}>
           {hireData.size}-Yard Skip
