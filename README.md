@@ -34,4 +34,4 @@ cd waste-manager-react
 npm install
 npm start 
 ```
-Also Hosted on Vercel at : ``
+Also Hosted on Vercel at : `https://waste-manager-react.vercel.app/`
