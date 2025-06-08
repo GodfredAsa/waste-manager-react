@@ -1,4 +1,4 @@
-const fetchSkipHireOptions = () => {
+export const fetchSkipHireOptions = () => {
   return [
     {
       id: 17933,
